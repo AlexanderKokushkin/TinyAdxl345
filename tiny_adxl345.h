@@ -1,8 +1,8 @@
 #include <Wire.h>
 #include <Arduino.h>
 
-// Common mistakes : https://github.com/Koepel/How-to-use-the-Arduino-Wire-library/wiki/Common-mistakes
-// I2C - Two-Wire Peripheral Interface : http://www.gammon.com.au/i2c
+// Common I2C mistakes : https://github.com/Koepel/How-to-use-the-Arduino-Wire-library/wiki/Common-mistakes
+// Two-Wire Peripheral Interface : http://www.gammon.com.au/i2c
 
 #ifndef TINY_ADXL345_h
 #define TINY_ADXL345_h
@@ -52,7 +52,7 @@ public:
  static const uint8_t BIT_FREE_FALL  = 2;
  static const uint8_t BIT_WATERMARK  = 1;
  static const uint8_t BIT_OVERRUN    = 0;
-private:
+//private:
 /********************** Register 0x2D POWER_CTL *********************/
  static const uint8_t PWR_LINK       = 5;
  static const uint8_t PWR_AUTO_SLEEP = 4;
